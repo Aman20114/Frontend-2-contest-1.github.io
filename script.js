@@ -18,6 +18,7 @@ function PrintStudentsbyForEach() {
   arr.forEach(a => {
     if (a.marks > 50) {
       console.log(a);
+      
     }
   });
 }
@@ -30,16 +31,16 @@ function addData() {
 
 function removeFailedStudent() {
   let filteredArr = arr.filter(a => a.marks >= 50);
-  console.log(filteredArr);
+  console.log(arr);
 }
 
 function concatenateArray() {
   let arr1 = [
-    { id: 7, name: "Umesh Golani", age: "20", marks: 85 },
-    { id: 9, name: "Aman Tiwari", age: "20", marks: 85 },
-    { id: 11, name: "Nishant Kishu", age: "20", marks: 85 },
+    { id: 7, name: "Golani Umesh", age: "20", marks: 95 },
+    { id: 9, name: "Tiwari Aman", age: "20", marks: 88 },
+    { id: 11, name: "Kishu Nishant", age: "20", marks: 90 },
   ];
-  let all = arr.concat(arr1);
+  arr = arr.concat(arr1);
 
-console.log(all);
+console.log(arr);
 }
